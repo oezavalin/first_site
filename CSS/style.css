@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "shreder";
+    src: url(../fonts/shreder.ttf) format("truetype");
+    font-family: "District";
+    src: url(../fonts/District.ttf) format("truetype");
+}
+
+/* Обнуляем все отступы */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Общие настройки страницы */
+body {
+    background-image: url(../images/bg.jpg);
+    font-family: 'District', Times, serif; /*Шрифт*/
+    width: 80em; /*Ширина рабочей области контекста*/
+    margin: 0 auto;
+}
+/* Шапка сайта */
+header {
+    background-color: #151515 .2;
+}
+header > img {
+    display: inline-block;
+    width: 10em;
+    margin-left: 3em;
+    vertical-align: middle;
+}
+header > h1 {
+    font-family: "shreder";
+    display: inline-block;
+    font-size: 3em;
+    vertical-align: middle;
+    margin-left: 1em;
+    text-transform: uppercase;
+    color: white;
+}
+header > nav {
+    width: 80em;
+    border-top: 0.1em solid white;
+    border-bottom: 0.1em solid white;
+    border-left: 0.1em solid white;
+    border-right: 0.1em solid white;
+}
+header > nav > a {
+    text-decoration: none;
+    font-size: 3em;
+    color: rgb(253, 253, 253);
+    margin-left: 3em;
+    text-transform: uppercase;
+    }
+header > nav > a:visited {
+        color: white;
+    }
+header > nav > a:hover {
+        color: rgb(245, 138, 15);
+    }
+/* Область контента, main */
+main {
+    background-color: rgba(243, 246, 247, 0.5);
+    }
+main > section:first-child > article {
+    position: relative;
+    }
+main > section:first-child > article > img {
+    width: 80em;
+    align-self: center;
+    }
+main > section:nth-child(2) {
+        background-color: rgba(255,255, 0, .3);
+    }
+main > section:nth-child(2) > article {
+    display: inline-block;
+    width: 20em;
+    vertical-align: top;
+    margin: 1em 0 1em 5em;
+    }
+main > section:nth-child(2) > article > h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    }
+main > section:nth-child(2) > article > p {
+    text-align: justify;
+    }
+footer {
+    background-color: rgba(117, 113, 113, 0.2);
+    border-top: 0.1em solid black;
+    }
+
+footer > h2 {
+    display: inline-block;
+    font-size: 3em;
+    vertical-align: middle;
+    margin-left: 6em;
+    text-transform: uppercase;
+    color: black;
+}
+
+footer > nav {
+    display: inline-block;
+    vertical-align: middle;
+    align-items: last baseline;
+    }
+
+footer > h1 {
+    font-family: "shreder";
+    display: inline-block;
+    font-size: 3em;
+    vertical-align: middle;
+    margin-left: 5em;
+    text-transform: uppercase;
+    color: black;
+}
+
+footer > nav > a >img {
+    display: inline-block;
+    width: 5em;
+    vertical-align: middle;
+    margin-left: 15em;
+    }
+footer > img {
+    display: inline-block;
+    width: 10em;
+    margin-left: 10em;
+    vertical-align: middle;
+    }
+
+/* Псевдоэлемент для левой стрелки */
+
+main > section:first-child > article:before {
+    content: '\2770';
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    cursor: pointer;
+    margin-top: 3.7em;
+}
+
+main > section:first-child > article:after {
+    content: '\2771';
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    cursor: pointer;
+    right: 0;
+    margin-top: 3.7em;
+}
